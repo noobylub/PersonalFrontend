@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  width: 50%;
+}
+
+.introduction-category {
+  padding: 20px;
+  font-weight: 500;
+}
+
+.introduction-category p {
+  padding: 30px;
+}
+
+.form-new-category .first-content {
+  padding: 15px;
+}
+
+.form-new-category form {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-new-category form .name {
+  width: 25%;
+  padding: 25px;
+}
+
+.form-new-category form .name h3 {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translate(6px, -32px);
+          transform: translate(6px, -32px);
+}
+
+.form-new-category form .name h3:hover {
+  -webkit-transform: translate(6px, -60px);
+          transform: translate(6px, -60px);
+}
+
+.form-new-category form .name input:valid + h3 {
+  color: green;
+  -webkit-transform: translate(6px, -60px);
+          transform: translate(6px, -60px);
+}
+
+.form-new-category form .name input:hover + h3 {
+  -webkit-transform: translate(6px, -60px);
+          transform: translate(6px, -60px);
+  color: yellowgreen;
+}
+
+.form-new-category form .name input:valid {
+  border: solid 2px green;
+}
+
+.form-new-category form .name input:invalid {
+  border: solid 2px black;
+}
+
+.form-new-category form .name input {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.form-new-category .descrip {
+  padding-left: 25px;
+}
+
+.form-new-category .descrip textarea {
+  width: 75%;
+}
+
+.form-new-category .descrip h3 {
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translate(4px, -165px);
+          transform: translate(4px, -165px);
+}
+
+.form-new-category .descrip h3:hover {
+  -webkit-transform: translate(4px, -195px);
+          transform: translate(4px, -195px);
+}
+
+.form-new-category .descrip textarea:hover + h3 {
+  -webkit-transform: translate(4px, -195px);
+          transform: translate(4px, -195px);
+}
+
+.form-new-category .descrip textarea:valid + h3 {
+  -webkit-transform: translate(4px, -195px);
+          transform: translate(4px, -195px);
+  color: green;
+}
+
+.form-new-category .descrip textarea {
+  font-size: 15px;
+  padding: 5px;
+}
+/*# sourceMappingURL=OneCategory.css.map */

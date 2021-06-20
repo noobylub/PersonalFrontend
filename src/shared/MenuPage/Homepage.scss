@@ -1,0 +1,114 @@
+@import "../variables";
+*{
+  padding: 0;
+  margin: 0;
+}
+.menu-button {
+
+  width: 100%;
+  padding: 10px;
+  background: rgba(248, 243, 212, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+    transition: 1s;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+  &:hover {
+    cursor: pointer;
+    letter-spacing: 3px;
+    
+  }
+  &::before {
+    content: " ";
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    width: 100px;
+    height: 5px;
+    
+    background:rgba(246, 65, 108, 0.55) ;
+    box-shadow: -1px 15px 20px -4px rgba(0, 184, 169, 1);
+   
+    
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    z-index: -1;
+    
+    transform-origin: top right;
+    transition: .3s;
+  }
+  &:hover::before {
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    
+
+  }
+}
+
+.overlay {
+  background: rgba(248, 243, 212, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal {
+  position: absolute;
+  
+  background-color: $secondary-color;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: $secondary-color;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  button {
+    
+    margin: 100px;
+    padding: 10px 30px;
+    border: none;
+    position: relative;
+    transition: 1s;
+    background-color: $secondary-color;
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      inset: 0 0 0 0;
+      background: rgba(248, 243, 212, 0.75);
+      box-shadow: -1px 15px 20px -4px rgba(0, 184, 169, 1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transform: scaleY(0);
+      z-index: -1;
+      transform-origin: top right;
+      transition: 1s;
+    }
+    &:hover::before {
+      transform: scaleY(1);
+      transform-origin: bottom right;
+    }
+    &:hover {
+       
+      cursor: pointer;
+      transform: translateY(-5px);
+    }
+  }
+}

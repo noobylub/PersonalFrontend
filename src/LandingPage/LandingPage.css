@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.different {
+  color: #f6416c;
+}
+
+.main-content-1 {
+  background-color: #f8f3d4;
+  height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp2983656.jpg");
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Stint Ultra Condensed", cursive;
+  letter-spacing: 3px;
+  font-size: larger;
+}
+
+.main-content-1 .message {
+  background: rgba(248, 243, 212, 0.75);
+  -webkit-box-shadow: -1px 15px 20px -4px #00b8a9;
+          box-shadow: -1px 15px 20px -4px #00b8a9;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 60px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main-content-1 .message h1 {
+  padding: 3vh 20vh;
+}
+
+.main-content-1 .message .last {
+  padding-bottom: 5vh;
+}
+
+hr {
+  border: 5px solid #f6416c;
+}
+
+.second-part {
+  background-color: #f8f3d4;
+  height: 80vh;
+  color: #00b8a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.second-part .text-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 40px;
+  width: 50%;
+}
+
+.second-part .text-part h1 {
+  padding-bottom: 1vh;
+  color: #f6416c;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  position: relative;
+}
+
+.second-part .text-part .message-box {
+  height: 30vh;
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.second-part .text-part .text {
+  text-align: left;
+  padding-top: 5vh;
+}
+
+.second-part .text-part .text p {
+  padding-top: 10px;
+}
+
+.second-part .img {
+  width: 50%;
+}
+
+.second-part .img img {
+  width: 100%;
+  padding-left: 25%;
+  padding-top: 15%;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+}
+/*# sourceMappingURL=LandingPage.css.map */

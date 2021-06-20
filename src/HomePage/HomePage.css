@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.name {
+  padding-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.name h1,
+.name h2 {
+  padding: 10px;
+}
+
+.name hr {
+  width: 50%;
+  border: 3px solid rgba(0, 184, 168, 0.5);
+}
+
+.main-profile {
+  background-color: rgba(0, 184, 168, 0.1);
+}
+
+.main-profile .describe {
+  padding: 20px;
+}
+
+.main-profile .describe textarea {
+  border: solid 4px #f8f3d4;
+}
+
+.main-profile .describe textarea:focus {
+  border: solid 4px #f6416c;
+}
+
+.main-profile button {
+  margin: 10px 20px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: #f8f3d4;
+  border: 2px solid rgba(246, 65, 108, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-profile button:hover {
+  -webkit-box-shadow: 10px 19px 67px -2px #f6416c;
+  box-shadow: 5px 0px 67px -2px #f6416c;
+  cursor: pointer;
+}
+
+.categories .display-first {
+  padding: 10px 10px 0px 10px;
+}
+
+.categories .name {
+  padding: 22px 10px 0px 10px;
+}
+
+.categories hr {
+  border-width: 3px;
+  width: 50%;
+}
+
+.categories .category-display .category-list {
+  background-color: rgba(246, 65, 108, 0.2);
+  padding-bottom: 0px;
+}
+
+.categories .category-display .category-list h3 {
+  margin-left: 10px;
+}
+
+.categories .category-display .category-list .list-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories .category-display .category-list .list-all .individual {
+  background-color: rgba(255, 222, 125, 0.3);
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  text-overflow: "-";
+  margin: 10px;
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.categories .category-display .category-list .list-all .individual h1 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.categories .category-display .category-list .list-all .individual p {
+  padding: 20px;
+}
+
+.categories .category-display .category-list .list-all .individual:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.categories .category-display .category-list .list-all .individual:hover h1 {
+  letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+  .individual {
+    max-width: 200px;
+    max-height: 100px;
+    font-size: 10px;
+  }
+  .individual p {
+    padding: 5px;
+  }
+}
+
+.add-something .error-form {
+  padding-top: -5px;
+  font-size: 10px;
+  padding-left: 10px;
+  color: red;
+}
+
+.add-something .name {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.add-something hr {
+  border-color: #ffde7d;
+}
+
+.new-categories {
+  background-color: #f8f3d4;
+}
+
+.new-categories h3 {
+  padding-left: 10px;
+}
+
+.new-categories .loading {
+  margin-left: 10px;
+}
+
+.new-categories .new-form {
+  padding-top: 20px;
+}
+
+.new-categories .new-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new-categories .new-form form input {
+  padding: 5px;
+  font-size: 20px;
+  margin: 10px 30% 3px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new-categories .new-form form input:focus {
+  border: solid 5px #00b8a8;
+}
+
+.new-categories .new-form form textarea {
+  font-size: 15px;
+  margin: 5px 20px 10px 10px;
+}
+
+.new-categories .new-form form button {
+  width: 200px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, black));
+  background: linear-gradient(to right, white 50%, black 50%);
+  color: black;
+  border: solid 3px black;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background-size: 200% 100%;
+  background-position: left bottom;
+  font-size: 10px;
+}
+
+.new-categories .new-form form button:hover {
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
+  background-position: right bottom;
+}
+
+.modal-category {
+  padding: 10px;
+}
+
+Link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=HomePage.css.map */

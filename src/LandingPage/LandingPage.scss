@@ -1,0 +1,88 @@
+@import "../shared/variables";
+.different {
+    color: $secondary-color;
+  }
+
+  //the first part
+.main-content-1 {
+  background-color: $primary-color;
+  height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp2983656.jpg");
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Stint Ultra Condensed", cursive;
+  letter-spacing: 3px;
+  font-size: larger;
+  
+  .message {
+    background: rgba(248, 243, 212, 0.75);
+    box-shadow: -1px 15px 20px -4px rgba(0, 184, 169, 1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      padding: 3vh 20vh;
+    }
+    .last {
+      padding-bottom: 5vh;
+    }
+  }
+}
+//line separation
+hr {
+  border: 5px solid $secondary-color;
+}
+//the second part of the landing page 
+.second-part {
+  background-color: $primary-color;
+  height: 80vh;
+  color: $ternary-color;
+  display: flex;
+  .text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 40px;
+    width: 50%;
+    h1 {
+      padding-bottom: 1vh;
+      color: $secondary-color;
+      text-decoration-line: underline;
+      position: relative;
+      
+    }
+    .message-box {
+      height: 30vh;
+      width: 35vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .text {
+      text-align: left;
+      padding-top: 5vh;
+      p {
+        padding-top: 10px;
+      }
+    }
+  }
+  .img {
+    width: 50%;
+    img {
+      width: 100%;
+      padding-left: 25%;
+      padding-top: 15%;
+      transform: translateX(-15%);
+    }
+  }
+}
