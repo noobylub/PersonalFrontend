@@ -61,11 +61,11 @@ export default function NewItem(props) {
             onChange={formik.handleChange}
           />
           <img src={formik.values.imageURL} alt="" />
-          <h3>There is a new page a new value foor{formik.values.name}</h3>
+          <h3>Another Edit into this new branch{formik.values.name}</h3>
         </div>
 
         <button type="submit">
-          <h1>Submit new </h1>
+          <h1>Submit another thing  </h1>
         </button>
       </form>
     </div>
