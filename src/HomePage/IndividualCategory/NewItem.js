@@ -52,7 +52,7 @@ export default function NewItem(props) {
           <h3>Description for {formik.values.name}</h3>
         </div>
         <div className="image-url">
-          <h3>Image for{formik.values.name}</h3>
+          
           <input
             required
             type="text"
@@ -61,6 +61,7 @@ export default function NewItem(props) {
             onChange={formik.handleChange}
           />
           <img src={formik.values.imageURL} alt="" />
+          <h3>Image for{formik.values.name}</h3>
         </div>
 
         <button type="submit">
